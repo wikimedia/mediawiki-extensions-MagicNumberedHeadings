@@ -1,6 +1,6 @@
 <?php
 /**
- * @copyright Copyright © 2007, Purodha Blissenabch.
+ * @copyright Copyright Â© 2007, Purodha Blissenabch.
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  *
  * This program is free software; you can redistribute it and/or
@@ -53,7 +53,7 @@ class MagicNumberedHeadings {
 		return true;
 	}
 
-	static public function ParserBeforeInternalParse($parser, $text, $stripState)
+	static public function ParserBeforeInternalParse($parser, &$text, $stripState)
 	{
 		if (MagicWord::get( 'MAG_NUMBEREDHEADINGS' )->matchAndRemove( $text ) ) {
 			$parser->mOptions->setNumberHeadings(TRUE);
