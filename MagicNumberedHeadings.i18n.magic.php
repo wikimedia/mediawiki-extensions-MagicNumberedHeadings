@@ -9,9 +9,9 @@ $magicWords['en'] = array(
 );
 
 $magicWords['de'] = array(
-	'MAG_NUMBEREDHEADINGS' => array( 0, '__ÜBERSCHRIFTENNUMMERIERUNG__' ),
+	'MAG_NUMBEREDHEADINGS' => array( 0, '__ÃœBERSCHRIFTENNUMMERIERUNG__' ),
 );
 
 $magicWords['ksh'] = array(
-	'MAG_NUMBEREDHEADINGS' => array( 0, '__ÖVVERSCHRIFTENUMMERIERE__' ),
+	'MAG_NUMBEREDHEADINGS' => array( 0, '__Ã–VVERSCHRIFTENUMMERIERE__' ),
 );
