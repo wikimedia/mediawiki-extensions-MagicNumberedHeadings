@@ -49,15 +49,14 @@ class MagicNumberedHeadings {
 
 	static public function MagicWordwgVariableIDs(&$wgVariableIDs)
 	{
-		$wgVariableIDs[] = MAG_NUMBEREDHEADINGS;
+		$wgVariableIDs[] = 'MAG_NUMBEREDHEADINGS';
 		return true;
 	}
 
 	static public function ParserBeforeInternalParse($parser, $text, $stripState)
 	{
-		if (MagicWord::get( MAG_NUMBEREDHEADINGS )->matchAndRemove( $text ) )
-		{
-			$parser->mOptions->mNumberHeadings = (TRUE);
+		if (MagicWord::get( 'MAG_NUMBEREDHEADINGS' )->matchAndRemove( $text ) ) {
+			$parser->mOptions->setNumberHeadings(TRUE);
 		}
 		return true;
 	}
