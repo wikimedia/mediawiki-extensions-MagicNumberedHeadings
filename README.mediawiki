@@ -1,0 +1,19 @@
+The '''MagicNumberedHeadings''' extension adds MagicWord __NUMBEREDHEADINGS__ to force autonumbering of the headings of a page. I was created so as to resolve [[:mediazilla:3254|bug 3254]].
+
+This extension adds a Magic Word __NUMBEREDHEADINGS__ to the parser. If an article contains this MagicWord, automatic numbering of the headings in this page is performed, regardless of the user preference setting.
+
+== Usage ==
+* Add "__NUMBEREDHEADINGS__" to any article.
+
+== Changes to LocalSettings.php ==
+Add this line towards the end of your
+<tt>[[Manual:LocalSettings.php|LocalSettings.php]]</tt>
+<source lang="php">wfLoadExtension('MagicNumberedHeadings');</source>
+
+
+== See also ==
+Related extensions:
+* [https://mediawiki.org/wiki/Extension:MagicNoNumberedHeadings Extension:MagicNoNumberedHeadings]
+* [https://mediawiki.org/wiki/Extension:PSINoTocNum Extension:PSINoTocNum]
+Bugzilla:
+* [https://bugzilla.wikimedia.org/3254 Bug 3254]
