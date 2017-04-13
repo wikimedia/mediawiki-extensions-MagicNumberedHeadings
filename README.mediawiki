@@ -6,8 +6,7 @@ This extension adds a Magic Word <tt>__NUMBEREDHEADINGS_</tt> to the parser. If 
 * Add "<tt>__NUMBEREDHEADINGS_</tt>" to any article.
 
 == Changes to LocalSettings.php ==
-Add this line towards the end of your
-<tt>[https://mediawiki.org/wiki/Manual:LocalSettings.php LocalSettings.php]</tt>
+Add this line towards the end of your [https://mediawiki.org/wiki/Manual:LocalSettings.php LocalSettings.php]:
 <source lang="php">wfLoadExtension('MagicNumberedHeadings');</source>
 
 
