@@ -3,7 +3,7 @@ The '''MagicNumberedHeadings''' extension adds MagicWord <tt>__NUMBEREDHEADINGS_
 This extension adds a Magic Word <tt>__NUMBEREDHEADINGS__</tt> to the parser. If an article contains this MagicWord, automatic numbering of the headings in this page is performed, regardless of the user preference setting.
 
 == Usage ==
-* Add "<tt>__NUMBEREDHEADINGS__</tt>" to any article.
+* Add "<tt>__NUMBEREDHEADINGS_&#x5f;</tt>" to any article.
 
 == Changes to LocalSettings.php ==
 Add this line towards the end of your
