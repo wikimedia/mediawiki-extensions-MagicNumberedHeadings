@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Macofe"
+		]
+	},
+	"magicnumberedheadings-desc": "Añade la palabra mágica <code><nowiki>__NUMBEREDHEADINGS__</nowiki></code> para forzar el numerado automático de los encabezados de una página"
+}
