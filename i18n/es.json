@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Macofe"
+			"Macofe",
+			"Fitoschido"
 		]
 	},
-	"magicnumberedheadings-desc": "Añade la palabra mágica <code><nowiki>__NUMBEREDHEADINGS__</nowiki></code> para forzar el numerado automático de los encabezados de una página"
+	"magicnumberedheadings-desc": "Añade la palabra mágica <code><nowiki>__NUMBEREDHEADINGS__</nowiki></code> para forzar la numeración automática de los títulos de una página"
 }
