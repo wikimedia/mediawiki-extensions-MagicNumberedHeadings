@@ -1,7 +1,5 @@
 <?php
 
-$messages = array();
-
 $magicWords = array();
 
 $magicWords['en'] = array(
