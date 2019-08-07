@@ -35,10 +35,6 @@
  * @version $Revision: 1.12
  */
 
-if (!defined('MEDIAWIKI')) {
-	die("This requires the MediaWiki enviroment.");
-}
-
 class MagicNumberedHeadings {
 
 	static public function MagicWordMagicWords(&$magicWords)
