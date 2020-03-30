@@ -1,7 +1,7 @@
 <?php
 /**
  * @copyright Copyright © 2007, Purodha Blissenabch.
- * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
+ * @license GPL-2.0-or-later
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -38,23 +38,20 @@ use MediaWiki\MediaWikiServices;
  */
 class MagicNumberedHeadings {
 
-	static public function MagicWordMagicWords(&$magicWords)
-	{
+	public static function MagicWordMagicWords( &$magicWords ) {
 		$magicWords[] = 'MAG_NUMBEREDHEADINGS';
 		return true;
 	}
 
-	static public function MagicWordwgVariableIDs(&$wgVariableIDs)
-	{
+	public static function MagicWordwgVariableIDs( &$wgVariableIDs ) {
 		$wgVariableIDs[] = 'MAG_NUMBEREDHEADINGS';
 		return true;
 	}
 
-	static public function ParserBeforeInternalParse($parser, &$text, $stripState)
-	{
+	public static function ParserBeforeInternalParse( $parser, &$text, $stripState ) {
 		$factory = MediaWikiServices::getInstance()->getMagicWordFactory();
 		if ( $factory->get( 'MAG_NUMBEREDHEADINGS' )->matchAndRemove( $text ) ) {
-			$parser->mOptions->setNumberHeadings(TRUE);
+			$parser->mOptions->setNumberHeadings( true );
 		}
 		return true;
 	}
