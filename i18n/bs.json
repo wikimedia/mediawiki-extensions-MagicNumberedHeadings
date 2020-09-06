@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Srdjan m"
+			"Srdjan m",
+			"Srđan"
 		]
 	},
 	"magicnumberedheadings-desc": "Dodaje čarobnu riječ <code><nowiki>__NUMBEREDHEADINGS__</nowiki></code> za prinudno automatsko numeriranje zaglavlja na stranicama"
