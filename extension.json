@@ -23,9 +23,9 @@
 		"MagicNumberedHeadingsMagic": "MagicNumberedHeadings.i18n.magic.php"
 	},
 	"Hooks": {
-		"MagicWordMagicWords": "MagicNumberedHeadings::MagicWordMagicWords",
-		"MagicWordwgVariableIDs": "MagicNumberedHeadings::MagicWordwgVariableIDs",
-		"ParserBeforeInternalParse": "MagicNumberedHeadings::ParserBeforeInternalParse"
+		"MagicWordMagicWords": "MagicNumberedHeadings::onMagicWordMagicWords",
+		"MagicWordwgVariableIDs": "MagicNumberedHeadings::onMagicWordwgVariableIDs",
+		"ParserBeforeInternalParse": "MagicNumberedHeadings::onParserBeforeInternalParse"
 	},
 	"manifest_version": 1
 }

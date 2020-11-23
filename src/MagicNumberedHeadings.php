@@ -38,21 +38,29 @@ use MediaWiki\MediaWikiServices;
  */
 class MagicNumberedHeadings {
 
-	public static function MagicWordMagicWords( &$magicWords ) {
+	/**
+	 * @param string[] &$magicWords
+	 */
+	public static function onMagicWordMagicWords( &$magicWords ) {
 		$magicWords[] = 'MAG_NUMBEREDHEADINGS';
-		return true;
 	}
 
-	public static function MagicWordwgVariableIDs( &$wgVariableIDs ) {
-		$wgVariableIDs[] = 'MAG_NUMBEREDHEADINGS';
-		return true;
+	/**
+	 * @param string[] &$variableIDs
+	 */
+	public static function onMagicWordwgVariableIDs( &$variableIDs ) {
+		$variableIDs[] = 'MAG_NUMBEREDHEADINGS';
 	}
 
-	public static function ParserBeforeInternalParse( $parser, &$text, $stripState ) {
+	/**
+	 * @param Parser $parser
+	 * @param string &$text
+	 * @param StripState $stripState
+	 */
+	public static function onParserBeforeInternalParse( $parser, &$text, $stripState ) {
 		$factory = MediaWikiServices::getInstance()->getMagicWordFactory();
 		if ( $factory->get( 'MAG_NUMBEREDHEADINGS' )->matchAndRemove( $text ) ) {
-			$parser->mOptions->setNumberHeadings( true );
+			$parser->getOptions()->setNumberHeadings( true );
 		}
-		return true;
 	}
 }
