@@ -1,4 +1,5 @@
 {
+	"name": "MagicNumberedHeadings",
 	"private": true,
 	"scripts": {
 		"test": "grunt test"
